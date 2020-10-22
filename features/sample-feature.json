@@ -1,0 +1,63 @@
+{
+  "title":"Sample title",
+  "description":"Sample description",
+  "spec":"http://example.com/path/to/spec.html",
+  "status":"wd",
+  "links":[
+    {
+      "url":"http://example.com/path/to/link.html",
+      "title":"Link title"
+    }
+  ],
+  "bugs":[
+    {
+      "description":"Sample bug description"
+    }
+  ],
+  "categories":[
+    "Player",
+    "Feed"
+  ],
+  "clients":{
+    "pocketcasts":{
+      "ios":"u",
+      "android":"u",
+      "web":"u",
+      "since":{ version:"1.4.2", date:"2019-01-22" },
+    },
+    "apple-podcasts:{
+      "ios":"u",
+      "web":"u"
+    },
+    "google-podcasts:{
+       "ios":"u",
+       "android":"u"
+    },
+  },
+  "directories":{
+    "podcast-index":{
+      "since":{ version:"1.4.2", date:"2019-01-22" },
+    },
+    "fyyd:{
+      "since":{ version:"1.4.2", date:"2019-01-22" },
+    },
+    "apple": false,
+  },
+  "providers":{
+    "podigee":{
+      "since":{ date:"2019-01-22" },
+    },
+    "blubrry:{
+      "since":{ date:"2019-01-22" },
+    },
+    "libsyn": false,
+  },
+  "notes":"Sample notes for feature, explain partial support here",
+  "notes_by_num":{
+    "1":"First note..."
+  },
+  "usage_perc_y":0,
+  "usage_perc_a":0,
+  "parent":"parentfeatureid",
+  "keywords":["example", "keywords"]
+}
