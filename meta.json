@@ -1,0 +1,114 @@
+{
+  "Meta": {
+    "Developer": "",
+    "Developer Location": "",
+    "Website": "",
+    "Twitter": "",
+    "Support E-Mail": "",
+    "Platform": "",
+    "Features:\nYES vs NO": "",
+    "Score": 0.0,
+    "Known Limitations": "",
+    "Notes": "",
+  },
+  "Availability": {
+    "Last Update": "",
+    "Latest Version": "",
+    "Minimum OS version": "",
+    "UI Language": "",
+    "Store/Download Link": "",
+    "Free": false,
+    "Light Version": false,
+    "Open Source": false,
+    "Price": "",
+  },
+  "Features 1": {
+    "Paged Feeds": {
+      "type": ["YES", "NO", "partial", "n/a"]
+    },
+    "Chapter Mark Support": false,
+    "MP3 Chapter Mark Support": false,
+    "Auto-Chapter": {
+      "description": "for podcasts without chapter marks"
+    },
+    "Chapter Duration": false,
+    "Chapter Start Timecode": false,
+    "Chapter End Timecode": false,
+    "Chapter Pictures": false,
+    "Shownotes for downloaded Episodes": false,
+    "Shownotes w/o explicit Download or Playback": false,
+  },
+  "Features 2": {
+    "Sleep Timer": false,
+    "Radio mode": {
+      "description": "a short break between each episode/chapter in a cronological playlist.\nbreaks could be:\n\n- music\n- defined short podcast episodes\n- urgent episodes (e.g. news)",
+    },
+    "Playback Speed": false,
+    "Gapless Playback": {
+      "description": "The ability to automatically skip silence in podcasts to reduce total play time without changing pitch or speed."
+    },
+    "Volume Boost": {
+      "description": "beside simple volume control"
+    },
+    "Bookmarks": false,
+    "Personal Playlist": false,
+    "Personal Smart Playlist": false,
+    "Predefined Smart Playlist": false,
+    "Explicit/Extended support for Video Podcasts": false,
+    "Opus Support": false,
+    "Explicit AirPlay support": {
+      "description": "AirPlay button within the app, e.g. no need to use the app switcher.\n\nNon iOS apps: AirPlay support in general"
+    },
+    "Audio Scrubbing": false,
+  },
+  "Features 3": {
+    "Tablet Version": false,
+    "Landscape Support": false,
+    "Inline Browser": false,
+    "Push for new Episodes": false,
+    "Custom Subscription Sorting": false,
+    "Alphabetically Subscription Sorting": false,
+    "Touch Controls (Gestures)": {
+      "description": "somewhere and somehow modern gesture controls are being used to control the app"
+    },
+    "Using OS-Built in Play/Pause Controls": {
+      "description": "On Android JB e.g. the notification area."
+    },
+  },
+  "Features 4": {
+    "Skip Intro": {
+      "description": "Start replay for this abo at a selectable time (e.g. 10s)"
+    },
+    "Play currently downloading Episode": false,
+    "Multiple parallel Downloads": false,
+    "Episode streaming": false,
+    "Password protected Podcasts": {
+      "description": "TODO: provide test feed url"
+    },
+    "Automatic downloading Options": {
+      "description": "turn automatic downloads on/off for mobile data networks"
+    },
+    "Disk Space Mgmt": false,
+    "Atom Feed Support": false,
+  },
+  "Syncing and Import / Export": {
+    "Cross Device Syncing": false,
+    "Sync Technology": "",
+    "Import from Music.app Library": false,
+    "OPML Export": false,
+    "OPML Import": false
+  },
+  "Feedback and Social Services": {
+    "Flattr (auto)": false,
+    "Podcast Directory": false,
+    "Comment Episode via AudioBoo": false,
+    "Comment Episode via Text": false,
+    "Social Sharing": false
+  },
+  "Miscellaneous": {
+    "Individual Podcast Settings": false,
+    "Add Episode to Playlist w/o subscribing": false,
+    "App-specific subscription URI scheme": "",
+    "Wikidata ID": "^Q\\d+$"
+  }
+}
