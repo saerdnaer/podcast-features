@@ -1,4 +1,4 @@
-# podcast-clients
+# podcast-features
 
 This project aims collect podcast features support data from all related components, e.g. native apps, web apps, directories, hosters, and other services. It aims to fit together with https://github.com/opawg/podcast-hosts and https://github.com/opawg/user-agents. Basically we want to build a dataset like https://github.com/Fyrd/caniuse but for podcast features instead of web browser features. The current idea is to reuse some of their ideas and tools (c.f. [#1](https://github.com/saerdnaer/podcast-clients/issues/1)) to create a web page like https://caniuse.com or simular.
 
