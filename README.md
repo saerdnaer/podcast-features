@@ -1,6 +1,6 @@
 # podcast-features
 
-This project aims collect podcast features support data from all related components, e.g. native apps, web apps, directories, hosters, and other services. It aims to fit together with https://github.com/opawg/podcast-hosts and https://github.com/opawg/user-agents. Basically we want to build a dataset like https://github.com/Fyrd/caniuse but for podcast features instead of web browser features. The current idea is to reuse some of their ideas and tools (c.f. [#1](https://github.com/saerdnaer/podcast-clients/issues/1)) to create a web page like https://caniuse.com or simular.
+This project aims collect podcast features support data from all related components, e.g. native apps, web apps, directories, hosters, (WordPress) plugins, and other services. It aims to fit together with https://github.com/opawg/podcast-hosts and https://github.com/opawg/user-agents. Basically we want to build a dataset like https://github.com/Fyrd/caniuse but for podcast features instead of web browser features. The current idea is to reuse some of their ideas and tools (c.f. [#1](https://github.com/saerdnaer/podcast-clients/issues/1)) to create a web page like https://caniuse.com or simular.
 
 
 The inital database was a more machine readable version of https://docs.google.com/spreadsheets/d/1c2L14UVH1xtN4iDG4awheLbMgPCQgaKEamUauWs1gps/edit#gid=0, which is in the process to be transformed into a [new structure](https://github.com/saerdnaer/podcast-clients/blob/main/features/sample-feature.json).
@@ -38,7 +38,7 @@ Currently the following feature information can be modified:
 	* `Feed`
 	* `Other`
 	* tbc...
-* **clients**, **directories**, **providers** — The collection of support data for a given set of implementations. Values are space-separated characters with these meanings, and must answer the question "*Can I use* the feature by default?":
+* **clients**, **directories**, **providers**, **others** — The collection of support data for a given set of implementations. The keys should match the `app` value from https://github.com/opawg/user-agents/blob/master/src/user-agents.json or `hostname` from https://github.com/opawg/podcast-hosts/blob/master/src/hosts.json, respectivly. Values are space-separated characters with these meanings, and must answer the question "*Can I use* the feature by default?":
 	* `y` - (**Y**)es, supported by default
 	* `a` - (**A**)lmost supported (aka Partial support)
 	* `n` - (**N**)o support, or disabled by default

@@ -19,28 +19,29 @@
     "Feed"
   ],
   "clients":{
-    "pocketcasts":{
-      "ios":"u",
-      "android":"u",
+    "Pocketcasts":{
+      "ios":"y",
+      "android":"y",
       "web":"u",
       "since":{ "version":"1.4.2", "date":"2019-01-22" }
     },
-    "apple-podcasts":{
-      "ios":"u",
+    "Apple Podcasts":{
+      "ios":"y",
       "web":"u"
     },
-    "google-podcasts":{
-       "ios":"u",
-       "android":"u"
+    "Google Podcasts":{
+       "ios":"y",
+       "android":"y"
     }
   },
   "directories":{
-    "podcast-index":{
+    "podcastindex.org":{
       "since":{ "version":"1.4.2", "date":"2019-01-22", "source":"https://domain.tld/blog/2020/support_for_sample_feature" }
     },
-    "fyyd":{
+    "fyyd.de":{
       "since":{ "version":"1.4.2", "date":"2019-01-22" }
     },
+    "listennotes.com": false,
     "apple": false
   },
   "providers":{
@@ -51,6 +52,14 @@
       "since":{ "date":"2019-01-22" }
     },
     "libsyn": false
+  },
+  "other":{
+    "PowerPress":{
+      "since":{ "date":"2019-01-22" }
+    },
+    "Podlove Publisher":{
+      "since":{ "date":"2019-01-22" }
+    }
   },
   "notes":"Sample notes for feature, explain partial support here",
   "notes_by_num":{

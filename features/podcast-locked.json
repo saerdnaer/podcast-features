@@ -1,0 +1,29 @@
+{
+  "title":"podcast:locked",
+  "description":"Tell other podcast platforms whether they are allowed to import this feed. A value of yes means that any attempt to import this feed into a new platform should be rejected. ",
+  "spec":"https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md#locked",
+  "status":"rec",
+  "categories":[
+    "Feed"
+  ],
+  "directories":{
+    "podcastindex.org":{
+      "since":{ "date":"2020" }
+    }
+  },
+  "providers":{
+    "Buzzsprout":{
+      "since":{ "date":"2020-11-05", "source": "https://twitter.com/buzzsprout/status/1324425781330796545" }
+    }
+  },
+  "other": {
+    "Castopod Server": {
+      "source": "https://podlibre.org/castopod-supports-podcast-locking/"
+    }
+  },
+  "notes":"",
+  "usage_perc_y":0,
+  "usage_perc_a":0,
+  "parent":"podcast-namespace",
+  "keywords":["chapters", "json"]
+}
