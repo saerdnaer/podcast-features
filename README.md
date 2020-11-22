@@ -1,11 +1,11 @@
 # podcast-clients
 
-This project aims collect features matrices for podcast clients, e.g. native apps, web apps and cloud solutions. It aims to fit together with https://github.com/opawg/podcast-hosts and https://github.com/opawg/user-agents. Basically we want to build a dataset like https://github.com/Fyrd/caniuse but for podcast features instead of web browser features. The current idea is to reuse some of their ideas and tools (c.f. [#1](https://github.com/saerdnaer/podcast-clients/issues/1)) to create a web page like https://caniuse.com or simular.
+This project aims collect podcast features support data from all related components, e.g. native apps, web apps, directories, hosters, and other services. It aims to fit together with https://github.com/opawg/podcast-hosts and https://github.com/opawg/user-agents. Basically we want to build a dataset like https://github.com/Fyrd/caniuse but for podcast features instead of web browser features. The current idea is to reuse some of their ideas and tools (c.f. [#1](https://github.com/saerdnaer/podcast-clients/issues/1)) to create a web page like https://caniuse.com or simular.
 
 
 The inital database was a more machine readable version of https://docs.google.com/spreadsheets/d/1c2L14UVH1xtN4iDG4awheLbMgPCQgaKEamUauWs1gps/edit#gid=0, which is in the process to be transformed into a [new structure](https://github.com/saerdnaer/podcast-clients/blob/main/features/sample-feature.json).
 
-Feel free to create Issues and PRs.= :-)
+This project is in it's very early stages, feel free to create Issues and PRs. :-)
 
 
 # Contributing to the feature data
