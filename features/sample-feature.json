@@ -23,34 +23,34 @@
       "ios":"u",
       "android":"u",
       "web":"u",
-      "since":{ "version":"1.4.2", "date":"2019-01-22" },
+      "since":{ "version":"1.4.2", "date":"2019-01-22" }
     },
-    "apple-podcasts:{
+    "apple-podcasts":{
       "ios":"u",
       "web":"u"
     },
-    "google-podcasts:{
+    "google-podcasts":{
        "ios":"u",
        "android":"u"
-    },
+    }
   },
   "directories":{
     "podcast-index":{
-      "since":{ "version":"1.4.2", "date":"2019-01-22" },
+      "since":{ "version":"1.4.2", "date":"2019-01-22", "source":"https://domain.tld/blog/2020/support_for_sample_feature" }
     },
-    "fyyd:{
-      "since":{ "version":"1.4.2", "date":"2019-01-22" },
+    "fyyd":{
+      "since":{ "version":"1.4.2", "date":"2019-01-22" }
     },
-    "apple": false,
+    "apple": false
   },
   "providers":{
     "podigee":{
-      "since":{ "date":"2019-01-22" },
+      "since":{ "date":"2019-01-22" }
     },
-    "blubrry:{
-      "since":{ "date":"2019-01-22" },
+    "blubrry":{
+      "since":{ "date":"2019-01-22" }
     },
-    "libsyn": false,
+    "libsyn": false
   },
   "notes":"Sample notes for feature, explain partial support here",
   "notes_by_num":{
