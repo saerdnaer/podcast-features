@@ -1,17 +1,20 @@
 {
-    "title":"Podcast Namespace",
-    "description":"The new RSS namespace initative from podcastindex.org",
-    "spec":"https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md",
-    "status":"rec",
-    "categories":[
-      "Feed"
-    ],
-    "notes":"Sample notes for feature, explain partial support here",
-    "notes_by_num":{
-      "1":"First note..."
-    },
-    "usage_perc_y":0,
-    "usage_perc_a":0,
-    "keywords":["example", "keywords"]
-  }
-  
+  "$schema": "./schema.json",
+  "title": "Podcast Namespace",
+  "description": "The new RSS namespace initative from podcastindex.org",
+  "spec": "https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md",
+  "status": "rec",
+  "categories": [
+    "Feed"
+  ],
+  "notes": "Sample notes for feature, explain partial support here",
+  "notes_by_num": {
+    "1": "First note..."
+  },
+  "usage_perc_y": 0,
+  "usage_perc_a": 0,
+  "keywords": [
+    "example",
+    "keywords"
+  ]
+}

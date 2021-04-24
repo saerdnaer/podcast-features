@@ -1,53 +1,68 @@
 {
-  "title":"podcast:chapters",
-  "description":"podcast:chapters element from the podcast namespace phase 1",
-  "spec":"https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md#chapters",
-  "status":"rec",
-  "categories":[
+  "$schema": "./schema.json",
+  "title": "podcast:chapters",
+  "description": "podcast:chapters element from the podcast namespace phase 1",
+  "spec": "https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md#chapters",
+  "status": "rec",
+  "categories": [
     "Player",
     "Feed"
   ],
-  "clients":{
-    "Podfriend":{
-      "web":"y",
-      "since":{ "date":"2020-11-03", "source": "https://twitter.com/adamcurry/status/1323417144378445831" }
-    },
-    "PodcastAddict":{
-        "android":"y",
-        "source":"https://podcastaddict.com/changelog/2020_16#section4"
-    },
-    "Chapters App":{
-        "macos": "y",
-        "source": "https://chaptersapp.com/faq/jsonExport.html"
-    },
-    "Hypercatcher":{
-      "web":"y",
-      "ios":"y",
+  "clients": {
+    "Podfriend": {
+      "web": "y",
       "since": {
-      "date": "2020-11-02",
-      "source": "https://hypercatcher.com/2020/11/how-to-create-podcast-chapters-as-a-listener/"
+        "date": "2020-11-03",
+        "source": "https://twitter.com/adamcurry/status/1323417144378445831"
+      }
+    },
+    "PodcastAddict": {
+      "android": "y",
+      "source": "https://podcastaddict.com/changelog/2020_16#section4"
+    },
+    "Chapters App": {
+      "macos": "y",
+      "source": "https://chaptersapp.com/faq/jsonExport.html"
+    },
+    "Hypercatcher": {
+      "web": "y",
+      "ios": "y",
+      "since": {
+        "date": "2020-11-02",
+        "source": "https://hypercatcher.com/2020/11/how-to-create-podcast-chapters-as-a-listener/"
       }
     }
   },
-  "directories":{
-    "podcastindex.org":{
-      "since":{ "date":"2020" }
+  "directories": {
+    "podcastindex.org": {
+      "since": {
+        "date": "2020"
+      }
     },
     "podverse.fm": {
       "web": "y",
       "ios": "u",
       "android": "u",
-      "since":{ "date": "2020-11-06", "source": "https://twitter.com/Podverse/status/1324729288281632771"}
+      "since": {
+        "date": "2020-11-06",
+        "source": "https://twitter.com/Podverse/status/1324729288281632771"
+      }
     }
   },
-  "providers":{
-    "buzzsprout":{
-      "since":{ "date":"2020-10-19", "source": "https://www.buzzsprout.com/blog/podcast-locking" }
+  "providers": {
+    "buzzsprout": {
+      "since": {
+        "date": "2020-10-19",
+        "source": "https://www.buzzsprout.com/blog/podcast-locking"
+      }
     }
   },
-  "notes":"",
-  "usage_perc_y":0,
-  "usage_perc_a":0,
-  "parent":"podcast-namespace",
-  "keywords":["chapters", "json"]
+  "notes": "",
+  "usage_perc_y": 0,
+  "usage_perc_a": 0,
+  "parent": "podcast-namespace",
+  "keywords": [
+    "chapters",
+    "json"
+  ]
 }

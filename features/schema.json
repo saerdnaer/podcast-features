@@ -1,0 +1,235 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://saerdnaer.de/podcast/feature-schema.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "required": [
+    "title",
+    "description",
+    "spec",
+    "status",
+    "categories",
+    "keywords"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Feature name",
+      "description": "(used for the title of the table)",
+      "examples": [
+        "podcast:chapters"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Brief description of the feature",
+      "examples": [
+        "podcast:chapters element from the podcast namespace phase 1"
+      ]
+    },
+    "spec": {
+      "type": "string",
+      "format": "uri",
+      "title": "Spec URL",
+      "default": "",
+      "examples": [
+        "https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md#chapters"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "title": "Spec status",
+      "enum": ["ls", "rec", "pr", "wd", "other", "unoff"],
+      "options": {
+        "enum_titles": ["Living Standard", "Recommendation", "Proposed Recommendation", "Working Draft", "other", "unofficial"]
+      },
+      "default": "wd"
+    },
+    "categories": {
+      "type": "array",
+      "title": "Categories",
+      "description": "Array of categories, any of the following",
+      "default": [],
+      "items": {
+        "anyOf": [
+          {
+            "type": "string",
+            "examples": [
+              "Player",
+              "Feed",
+              "Other"
+            ]
+          }
+        ]
+      }
+    },
+    "clients": {
+      "type": "object",
+      "title": "Podcast apps",
+      "description": "The collection of support data for a given set of implementations. The keys should match the app value from https://github.com/opawg/user-agents/blob/master/src/user-agents.json",
+      "additionalProperties": true,
+      "patternProperties": {
+        ".*": {
+          "$ref": "#/definitions/ClientImplementation"
+        }
+      }
+    },
+    "directories": {
+      "type": "object",
+      "title": "Podcast directories",
+      "description": "An explanation about the purpose of this instance.",
+      "additionalProperties": true,
+      "patternProperties": {
+        ".*": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Implementation"
+            },
+            {
+              "$ref": "#/definitions/ClientImplementation"
+            }
+          ]
+        }
+      }
+    },
+    "providers": {
+      "type": "object",
+      "title": "Providers",
+      "description": "The collection of support data for a hosterr. The keys should match the hostname from https://github.com/opawg/podcast-hosts/blob/master/src/hosts.json",
+      "patternProperties": {
+        ".*": {
+          "$ref": "#/definitions/Implementation"
+        }
+      }
+    },
+    "others": {
+      "type": "object",
+      "title": "Other implementations",
+      "description": "which do not fit the other three sections",
+      "patternProperties": {
+        ".*": {
+          "$ref": "#/definitions/Implementation"
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes",
+      "description": "Notes on feature support, often to explain what partial support refers to"
+    },
+    "notes_by_num": {
+      "type": "object",
+      "title": "NotesByNum",
+      "description": "Map of numbers corresponding to notes. Used in conjunction with the #n notation under stats. Each key should be a number (no hash), the value is the related note",
+      "examples": [
+        {
+          "1": "Foo"
+        }
+      ],
+      "patternProperties": {
+        "[0-9]+": {
+          "type": "string"
+        }
+      }
+    },
+    "usage_perc_y": {
+      "type": "number"
+    },
+    "usage_perc_a": {
+      "type": "number"
+    },
+    "parent": {
+      "type": "string",
+      "title": "ID of parent feature",
+      "examples": [
+        "podcast-namespace"
+      ]
+    },
+    "keywords": {
+      "type": "array",
+      "title": "Keywords",
+      "description": "Comma separated words that will match the feature in a search",
+      "default": []
+    }
+  },
+  "definitions": {
+    "ImplementationStatus": {
+      "type": "string",
+      "enum": ["y", "a", "n", "u", "p"],
+      "options": {
+        "enum_titles": ["(Y)es, supported by default", "(A)lmost supported (aka Partial support)", "(N)o support, or disabled by default", "Support (u)nknown", "(D)isabled by default (need to enable flag or something)"]
+      }
+    },
+    "Implementation": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ImplementationStatus"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "$ref": "#/definitions/ImplementationStatus",
+              "default": "y"
+            },
+            "since": {
+              "$ref": "#/definitions/ImplementationSince"
+            },
+            "source": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      ]
+    },
+    "ClientImplementation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "web": {
+          "$ref": "#/definitions/ImplementationStatus"
+        },
+        "ios": {
+          "$ref": "#/definitions/ImplementationStatus"
+        },
+        "android": {
+          "$ref": "#/definitions/ImplementationStatus"
+        },
+        "macos": {
+          "$ref": "#/definitions/ImplementationStatus"
+        },
+        "since": {
+          "$ref": "#/definitions/ImplementationSince"
+        },
+        "source": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "ImplementationSince": {
+      "type": "object",
+      "title": "Feature available since",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "date": {
+          "anyOf": [
+            {"type": "string", "format": "date"},
+            {"type": "string", "format": "year"}
+          ]
+        },
+        "source": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  }
+}
