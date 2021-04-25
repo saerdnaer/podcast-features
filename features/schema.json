@@ -222,7 +222,7 @@
         "date": {
           "anyOf": [
             {"type": "string", "format": "date"},
-            {"type": "string", "format": "year"}
+            {"type": "string", "pattern": "^2[0-9]{3}$"}
           ]
         },
         "source": {
